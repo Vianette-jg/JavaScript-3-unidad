@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número Secreto</title>
+    <script>
+        window.onload = function() {
+            let secreto = 9; // Número secreto
+            let intento = 0;
+
+            do {
+                intento++;
+                console.log("Intento: " + intento);
+            } while (intento !== secreto);
+// Muestra en una alerta
+            console.log("Encontraste el número secreto. Era: " + secreto); 
+        };
+    </script>
+</head>
+<body>
+    <h1>Adivina el Número Secreto</h1>
+</body>
+</html>
