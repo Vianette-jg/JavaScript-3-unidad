@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Semana</title>
+    <script>
+        window.onload = function() {
+            let dia = parseInt(prompt("Ingrese un número del 1 al 7 para conocer el día de la semana:")); // Solicita el número del día
+            let resultado;
+
+            if (dia === 1) {
+                resultado = "Lunes";
+            } else if (dia === 2) {
+                resultado = "Martes";
+            } else if (dia === 3) {
+                resultado = "Miércoles";
+            } else if (dia === 4) {
+                resultado = "Jueves";
+            } else if (dia === 5) {
+                resultado = "Viernes";
+            } else if (dia === 6) {
+                resultado = "Sábado";
+            } else if (dia === 7) {
+                resultado = "Domingo";
+            } else {
+                resultado = "Día inválido";
+            }
+
+            alert(resultado); // Muestra en una alerta
+            console.log(resultado); // Muestra en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Verificador de Día de la Semana</h1>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Número</title>
+    <script>
+        window.onload = function() {
+            let numero = parseFloat(prompt("Ingrese un número:")); // Solicita el número al usuario
+            let resultado;
+
+            if (numero > 0) {
+                resultado = "El número es positivo";
+            } else if (numero < 0) {
+                resultado = "El número es negativo";
+            } else {
+                resultado = "El número es cero";
+            }
+
+            alert(resultado); // Muestra en una alerta
+            console.log(resultado); // Muestra en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Verificador de Número</h1>
+</body>
+</html>

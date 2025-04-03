@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Calificación</title>
+    <script>
+        window.onload = function() {
+            let calificacion = parseInt(prompt("Ingrese su calificación:")); // Solicita la calificación al usuario
+            let resultado;
+
+            if (calificacion === 100) {
+                resultado = "Excelente calificación";
+            } else if (calificacion === 80) {
+                resultado = "Buena calificación";
+            } else if (calificacion === 70) {
+                resultado = "Aprobatoria";
+            } else if (calificacion === 60) {
+                resultado = "Mala calificación";
+            } else {
+                resultado = "Calificación no válida";
+            }
+
+            alert(resultado); // Muestra en una alerta
+            console.log(resultado); // Muestra en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Verificador de Calificación</h1>
+</body>
+</html>

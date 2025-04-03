@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Año Bisiesto</title>
+    <script>
+        window.onload = function() {
+            let anio = parseInt(prompt("Ingrese un año para verificar si es bisiesto:")); // Solicita el año al usuario
+            let resultado;
+
+            if ((anio % 4 === 0 && anio % 100 !== 0) || (anio % 400 === 0)) {
+                resultado = anio + " es un año bisiesto.";
+            } else {
+                resultado = anio + " no es un año bisiesto.";
+            }
+
+            alert(resultado); // Muestra en una alerta
+            console.log(resultado); // Muestra en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Verificador de Año Bisiesto</h1>
+</body>
+</html>

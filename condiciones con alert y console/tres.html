@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Votación</title>
+    <script>
+        window.onload = function() {
+            let edad = parseInt(prompt("Ingrese su edad:")); // Solicita la edad al usuario
+            let resultado;
+
+            if (edad >= 18) {
+                resultado = "Puede votar";
+            } else {
+                resultado = "No puede votar";
+            }
+
+            alert(resultado); // Muestra en una alerta
+            console.log(resultado); // Muestra en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Verificador de Votación</h1>
+</body>
+</html>
