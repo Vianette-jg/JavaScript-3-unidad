@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo Personalizado</title>
+    <script>
+        window.onload = function() {
+            function saludar(nombre) {
+                return `Hola ${nombre} ¿Cómo estás?`; // Saludo personalizado
+            }
+
+            let saludo = saludar('Maria');
+            alert(saludo); // Muestra el saludo en una alerta
+            console.log(saludo); // Muestra el saludo en la consola
+        };
+    </script>
+</head>
+<body>
+    <h1>Saludo Personalizado</h1>
+</body>
+</html>
