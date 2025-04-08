@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Soy un h1</h1>
+
+    <script>
+        if(confirm("Queres cambiar el color?")){
+            let col = prompt("ingresa el color de fondo que quieras en ingles");
+            document.body.style.backgroundColor = col;
+            alert("Color cambiado exitosamente");
+        }else{
+            alert("No se cambió nada");
+        }
+    </script>
+</body>
+</html>
