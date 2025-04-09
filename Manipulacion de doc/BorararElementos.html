@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar y borrar elementos simples</title>
+</head>
+<body>
+
+  <div id="contenido"></div>
+
+  <script>
+    let contador = 0;
+
+    while (contador < 5) {
+      let tipo = prompt("Agrega un elemento (h1, h3, h4, h5, p):");
+      if (["h1", "h3", "h4", "h5", "p"].includes(tipo)) {
+        let texto = prompt("Escribe el contenido:");
+        let el = document.createElement(tipo);
+        el.textContent = texto;
+        document.getElementById("contenido").appendChild(el);
+        contador++;
+      }
+    }
+
+    let borrar = prompt("Ya hay 5 elementos. Escribe qué tipo quieres borrar (h1, h3, h4, h5, p):");
+    let elemento = document.querySelector(borrar);
+    if (elemento) {
+      elemento.remove();
+      contador--;
+    }
+
+    alert("Elementos restantes mostrados en la página.");
+  </script>
+
+</body>
+</html>

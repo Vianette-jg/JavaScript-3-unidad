@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar contenido</title>
+</head>
+<body>
+
+  <div id="contenido"></div>
+
+  <script>
+ 
+    window.onload = function() {
+      let tipo = prompt("¿Qué tipo de elemento deseas agregar? (h1, h2, h3, h4, p)").toLowerCase();
+
+      if (["h1", "h2", "h3", "h4", "p"].includes(tipo)) {
+        let texto = prompt(`Escribe el texto para el elemento <${tipo}>:`);
+        let nuevoElemento = document.createElement(tipo);
+        nuevoElemento.textContent = texto;
+        document.getElementById("contenido").appendChild(nuevoElemento);
+      } else {
+        alert("Tipo de elemento no válido. Solo se permiten: Los que se mostro al inicio");
+      }
+    }
+  </script>
+
+</body>
+</html>

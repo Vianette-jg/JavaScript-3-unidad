@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Agregar hasta 5 elementos</title>
+</head>
+<body>
+
+  <div id="contenido"></div>
+
+  <script>
+    let contador = 0;
+
+    while (contador < 5) {
+      let tipo = prompt("Agrega un elemento: h1, h3, h4, h5 o p").toLowerCase();
+
+      if (["h1", "h3", "h4", "h5", "p"].includes(tipo)) {
+        let texto = prompt(`Escribe el contenido para <${tipo}>:`);
+        let nuevo = document.createElement(tipo);
+        nuevo.textContent = texto;
+        document.getElementById("contenido").appendChild(nuevo);
+        contador++;
+      } else {
+        alert("Solo puedes agregar: h1, h3, h4, h5 o p");
+      }
+    }
+
+    alert("Ya agregaste 5 elementos");
+  </script>
+
+</body>
+</html>
