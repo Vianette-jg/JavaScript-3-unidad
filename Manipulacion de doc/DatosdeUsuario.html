@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Usuario</title>
+</head>
+<body>
+
+  <h1>Registro de Usuario</h1>
+  <button onclick="registrarUsuario()" style="width:200px; height:50px; background-color:rgb(128, 0, 34); color:white; font-size:16px;">
+    Registrar Usuario
+  </button>
+
+  <div id="datos" style="margin-top:20px;"></div>
+
+  <script>
+    function registrarUsuario() {
+      const nombre = prompt("Ingresa tu nombre:");
+      const correo = prompt("Ingresa tu correo electrónico:");
+      const edad = prompt("Ingresa tu edad:");
+
+      if (nombre && correo && edad) {
+        const contenedor = document.getElementById("datos");
+        contenedor.innerHTML = `
+          <h3>Datos Registrados:</h3>
+          <p><strong>Nombre:</strong> ${nombre}</p>
+          <p><strong>Correo:</strong> ${correo}</p>
+          <p><strong>Edad:</strong> ${edad}</p>
+        `;
+        alert("¡Registro exitoso!");
+      } else {
+        alert("Registro cancelado o incompleto.");
+      }
+    }
+  </script>
+
+</body>
+</html>
