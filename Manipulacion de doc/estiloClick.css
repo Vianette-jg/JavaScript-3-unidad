@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #f9f9f9;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding: 0 10px;
+  }
+  
+  img {
+    width: 160px;
+    margin: 15px 0;
+    border-radius: 10px;
+  }
+  
+  .botones {
+    margin-top: 25px;
+  }
+  
+  /* Estilo general para todos */
+  button {
+    font-size: 22px;
+    margin: 10px;
+    padding: 12px 18px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    transition: transform 0.2s;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Colores individuales */
+  button:nth-child(1) { background-color: #f7c84b; } /* Amarillo - A */
+  button:nth-child(2) { background-color: #4caf50; } /* Verde - V */
+  button:nth-child(3) { background-color: #ff9800; } /* Naranja - N */
+  button:nth-child(4) { background-color: #6b2a56; } /* Morado - M */
+  

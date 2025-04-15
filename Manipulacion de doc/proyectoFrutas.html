@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Frutas por Color</title>
+  <link rel="stylesheet" href="estiloClick.css">
+</head>
+<body>
+
+  <h1 id="nombreFruta">Plátano</h1>
+  <h3 id="descripcionFruta">
+    El plátano amarillo está maduro, dulce y perfecto para comer directo o en postres.
+  </h3>
+  <img id="imagenFruta" src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg" alt="Fruta">
+
+  <div class="botones">
+    <button onclick="mostrarInfo('A')">A</button>
+    <button onclick="mostrarInfo('V')">V</button>
+    <button onclick="mostrarInfo('N')">N</button>
+    <button onclick="mostrarInfo('M')">M</button>
+  </div>
+
+  <script>
+    const datos = {
+      A: {
+        nombre: "Plátano",
+        descripcion: "El plátano amarillo está maduro, dulce y perfecto para comer directo o en postres.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Banana-Single.jpg"
+      },
+      V: {
+        nombre: "Limón",
+        descripcion: "El limón verde es ácido, refrescante y muy usado en bebidas y cocina.",
+        img:  "https://www.smartnfinal.com.mx/wp-content/uploads/2022/07/17037-Limon-persa-organico-1-kg.jpg"
+
+
+      },
+      N: {
+        nombre: "Naranja",
+        descripcion: "La naranja es jugosa, rica en vitamina C, perfecta para jugos y postres.",
+        img: "https://upload.wikimedia.org/wikipedia/commons/c/c4/Orange-Fruit-Pieces.jpg"
+      },
+      M: {
+        nombre: "Uvas",
+        descripcion: "Las Uvas moradas es dulce, jugosas, ideal como snack saludable o en tartas.",
+        img: "https://superales.mx/wp-content/uploads/2021/04/Uva-roja.jpg"
+      }
+    };
+
+    function mostrarInfo(letra) {
+      const fruta = datos[letra];
+      document.getElementById("nombreFruta").textContent = fruta.nombre;
+      document.getElementById("descripcionFruta").textContent = fruta.descripcion;
+      document.getElementById("imagenFruta").src = fruta.img;
+    }
+  </script>
+
+</body>
+</html>
